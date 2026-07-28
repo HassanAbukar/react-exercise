@@ -27,7 +27,18 @@
 //import MultipleForm from "./exercise22/MultipleForm";
 //import DeveloperForm from "./exercise23/DeveloperForm";
 // import RegistrationForm from "./exercise24/RegistrationForm";
-import RecipeApp from "./exercise25/RecipeApp";
+//import RecipeApp from "./exercise25/RecipeApp";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { AuthProvider } from './exercise26/context/AuthContext';
+import { PostsProvider } from './exercise26/context/PostsContext';
+import BlogPost from './exercise26/BlogPost';
+import Home from './exercise26/components/Home';
+import PostDetail from './exercise26/components/PostDetail';
+import CreatePost from './exercise26/components/CreatePost';
+import Login from './exercise26/components/Login';
+import NotFound from './exercise26/components/NotFound';
+import ProtectedRoute from './exercise26/components/ProtectedRoute';
+
 
 const App = () =>{
   //           const users = [
@@ -91,7 +102,26 @@ const App = () =>{
      {/* <MultipleForm /> */}
      {/* <DeveloperForm /> */}
      {/* <RegistrationForm /> */}
-     <RecipeApp />
+     {/* <RecipeApp /> */}
+       <BrowserRouter>
+            <AuthProvider>
+                <PostsProvider>
+                      <Routes>
+                        <Route path="/" element={<BlogPost />}>
+                            <Route index element={<Home />} />
+                            <Route path="posts/:postId" element={<PostDetail />} />
+                            <Route path="create" element={
+                                <ProtectedRoute>
+                                    <CreatePost />
+                                </ProtectedRoute>
+                            } />
+                            <Route path="login" element={<Login />} />
+                        </Route>
+                        <Route path="*" element={<NotFound />} />
+                    </Routes>
+                </PostsProvider>
+            </AuthProvider>
+        </BrowserRouter>
         </div>
 
         

@@ -1,4 +1,5 @@
-/* @import  "tailwindcss"; */
+@import "tailwindcss";
+
 :root {
   --primary-color: #2c3e50;
   --secondary-color: #3498db;
@@ -118,8 +119,4 @@ li a {
 
 li a:hover {
   text-decoration: underline;
-}
-
-.error {
-  border: 1px solid tomato;
 }
