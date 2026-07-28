@@ -1,0 +1,56 @@
+/* Page background */
+.page {
+  min-height: 100vh;
+  background-color: #e8e8f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Top navigation */
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.navBtn {
+  padding: 8px 24px;
+  border: none;
+  border-radius: 999px;
+  font-size: 14px;
+  cursor: pointer;
+  background: transparent;
+  color: #555;
+  font-weight: 500;
+}
+
+.navBtnActive {
+  background-color: #ede9fe;
+  color: #6d28d9;
+  font-weight: 600;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 32px;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 32px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #1a1a2e;
+}

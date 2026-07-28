@@ -1,0 +1,48 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  background-color: #f9f9fc;
+  transition: background 0.2s;
+}
+
+.itemCompleted {
+  background-color: #f0eeff;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  accent-color: #7c3aed;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.text {
+  flex: 1;
+  font-size: 15px;
+  color: #333;
+  cursor: pointer;
+}
+
+.textCompleted {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  color: #e53e3e;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.deleteBtn:hover {
+  color: #c53030;
+}
