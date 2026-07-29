@@ -38,6 +38,7 @@ import CreatePost from './exercise26/components/CreatePost';
 import Login from './exercise26/components/Login';
 import NotFound from './exercise26/components/NotFound';
 import ProtectedRoute from './exercise26/components/ProtectedRoute';
+// import LanguageContext from './exercise15/LanguageContext';
 
 
 const App = () =>{
@@ -101,6 +102,7 @@ const App = () =>{
      {/* <StudentDashboard /> */}
      {/* <MultipleForm /> */}
      {/* <DeveloperForm /> */}
+        {/* <LanguageContext /> */}
      {/* <RegistrationForm /> */}
      {/* <RecipeApp /> */}
        <BrowserRouter>

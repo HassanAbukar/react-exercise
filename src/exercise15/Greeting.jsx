@@ -1,5 +1,4 @@
-// Greeting.jsx
-import { useContext } from 'react';
+import  { useContext } from 'react';
 import LanguageContext from './LanguageContext';
 
 function Greeting() {
